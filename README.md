@@ -1,5 +1,5 @@
 #### hexo-theme-maoblog
 
-A hexo theme that like [bearblog](https://github.com/HermanMartinus/bearblog)
+A hexo theme.
 
 🚧In development.
