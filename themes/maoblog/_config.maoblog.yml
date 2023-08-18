@@ -3,7 +3,7 @@ language: en
 
 # main menu navigation
 menu:
-  Home: /
+  Posts: /
   Tags: /tags
   About: /about
 #  Contact: /contact
