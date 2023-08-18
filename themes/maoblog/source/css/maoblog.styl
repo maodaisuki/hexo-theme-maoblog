@@ -28,6 +28,7 @@ body
   // TODO 谷歌字体
   font-family: "Montserrat", "SF UI Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Helvetica, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif
   font-size: 16px
+  font-weight: 400
   background: var(--bg)
   line-height: 1.75
 
@@ -35,7 +36,7 @@ body
   background: var(--paper)
   width: clamp(300px, 70%, 800px)
   margin: 15px auto
-  padding: 60px 0px 90px 0px
+  padding: 60px 0px 30px 0px
   min-height: 100%
   border-radius: 6px
   box-shadow: 0 0 10px 5px var(--shadow)
@@ -45,6 +46,7 @@ body
 
 .body-main
   background: var(--paper)
+  min-height: 700px
   width: 85%
   margin: 0 auto
 
@@ -102,6 +104,9 @@ ul
     transition: opacity ease-in-out .5s;
 }
 
+// .site-mode
+//   margin-left: auto
+
 .arichive
   display: flex
   flex-direction: column
@@ -116,7 +121,7 @@ ul
   flex-wrap: nowrap
   justify-content: flex-start
   align-content: center
-  padding: 12px 0
+  padding: 8px 0
 
 // 奇偶数
 .archive li:nth-child(odd)
@@ -145,20 +150,26 @@ ul
 .footer-container
     display: flex
     justify-content: flex-start
-    margin-top: 50px
+    margin-top: 30px
+    margin-bottom: 5px
 
 .footer-meta
-    font-size: 0.9rem
+    font-size: 0.85rem
     color: #999
     width: 100%
     margin: 0 auto
-    display: inline-flex
+    display: flex
+    justify-content: flex-start
     a
-        color: #777
+        color: #999
         &:hover
             color: #555
 
 .footer-meta > div:not(:last-child)
     margin-right: 5px
 
+.tags-cloud
+    color: red
 
+div .tag-list a
+    margin-right: 10px

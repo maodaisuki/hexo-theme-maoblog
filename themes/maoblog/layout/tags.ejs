@@ -1,6 +1,13 @@
 <main class="main-body">
-  <h2 class="page-title"><%= page.title %></h2>
-  <div class="tag-cloud-container">
-    <%- list_tags(site.tags, {class: 'classtest', style: 'list'}) %>
+  <!-- <h2 class="page-title">
+    <%= page.title %>
+  </h2> -->
+  <div class="tag-list">
+    <%- tagcloud({
+      min_font: 15,
+      max_font: 20,
+      amount: 999,
+      orderby: "random",
+    }) %>
   </div>
 </main>
