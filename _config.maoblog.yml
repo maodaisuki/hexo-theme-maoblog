@@ -17,6 +17,10 @@ license:
   url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 
+# writing
+untitled:
+  name: Untitled
+
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/maoblog.css
