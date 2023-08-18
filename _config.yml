@@ -4,7 +4,7 @@
 
 # Site
 title: maoblog
-subtitle: ''
+subtitle: 'maoblog'
 description: ''
 keywords:
 author: John Doe
@@ -103,3 +103,9 @@ theme: maoblog
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20

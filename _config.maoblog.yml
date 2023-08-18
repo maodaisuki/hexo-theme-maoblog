@@ -25,6 +25,9 @@ stylesheets:
 scripts:
 - /js/maoblog.js
 
+rss:
+  path: atom.xml
+
 utterances:
   enable: true
   repo: maodaisuki/hexo-theme-maoblog
