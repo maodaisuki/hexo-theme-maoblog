@@ -103,7 +103,7 @@ theme: maoblog
 deploy:
   type: 'git'
   repo: https://github.com/maodaisuki/hexo-theme-maoblog
-  branch: master
+  branch: gh-pages
 
 # Feed Atom
 feed:
