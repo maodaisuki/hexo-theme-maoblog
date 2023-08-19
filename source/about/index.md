@@ -1,6 +1,9 @@
+---
 title: About
-date: 2023-08-17 17:32:28
-type: "about"
+sitemap: ture
 ---
 
-Hello hexo!
+<a href="https://mstdn.jp/@mao0_0">mao</a>です。猫じゃないです。誰も知らないネット民だけです。（中国在住の中国人）
+
+💬 👇お気軽にコメントしてください~
+
