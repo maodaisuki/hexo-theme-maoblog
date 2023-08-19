@@ -4,7 +4,7 @@ language: en
 # main menu navigation
 menu:
   Posts: /
-#  Tags: /tags
+  Tags: /tags
   About: /about
 #  Contact: /contact
 #  Archives: /archives
