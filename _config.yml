@@ -101,10 +101,10 @@ theme: maoblog
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: 'git'
-  repo: https://github.com/maodaisuki/hexo-theme-maoblog
-  branch: gh-pages
+# deploy:
+#   type: 'git'
+#   repo: https://github.com/maodaisuki/hexo-theme-maoblog
+#   branch: gh-pages
 
 # Feed Atom
 feed:
