@@ -38,3 +38,5 @@ utterances:
   issueTerm: pathname
   theme: github-light
 
+mathjax:
+  enable: true

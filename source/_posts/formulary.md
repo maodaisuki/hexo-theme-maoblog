@@ -5,6 +5,6 @@ date: 2013-12-24 23:33:26
 There is a formulary.
 
 $$
-$\ni$、$\subset$、$\subseteq$、$\supset$、$\supseteq$、$\N$、$\Z$、$\R$、$\R$、$\infty$
+\dfrac{分子}{分母}
 $$
 
