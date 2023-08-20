@@ -111,3 +111,17 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
+
+# _config.yml
+math:
+  katex:
+    css: 'css/math/katex.min.css'
+    options:
+      throwOnError: false
+  mathjax:
+    css: 'css/math/style.css'
+    options:
+      conversion:
+        display: false
+      tex:
+      svg:
