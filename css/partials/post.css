@@ -106,6 +106,9 @@
   font-family: monospace;
   font-size: 1em;
 }
+.post-content .mermaid {
+  text-align: center;
+}
 .post-content kbd {
   display: inline-block;
   padding: 3px 5px;
