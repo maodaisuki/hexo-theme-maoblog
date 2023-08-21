@@ -26,7 +26,7 @@ rss:
 
 utterances:
   enable: true
-  repo: maodaisuki/blog
+  repo: maodaisuki/hexo-theme-maoblog
   issueTerm: pathname
   theme: github-light
   
