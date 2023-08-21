@@ -16,13 +16,16 @@
   </div>
 </main>
 <% if (theme.utterances && theme.utterances.enable && page.comments) { %>
-<script src="https://utteranc.es/client.js"
+<script src="<%= theme.utterances.cdn %>"
   repo="<%= theme.utterances.repo %>"
   issue-term="<%= theme.utterances.issueTerm %>"
   theme="<%= theme.utterances.theme %>"
   crossorigin="anonymous"
   async>
 </script>
+<% } %>
+<% if (theme.mermaid.enable) { %>
+  <%- js('/js/mermaid.min.js') %>
 <% } %>
 <%- js('/js/zoom/jquery.min.js') %>
 <%- js('/js/zoom/bootstrap.min.js') %>
