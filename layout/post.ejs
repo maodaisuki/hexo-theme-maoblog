@@ -24,6 +24,9 @@
   async>
 </script>
 <% } %>
+<% if (theme.mermaid.enable) { %>
+  <%- js('/js/mermaid.min.js') %>
+<% } %>
 <%- js('/js/zoom/jquery.min.js') %>
 <%- js('/js/zoom/bootstrap.min.js') %>
 <%- js('/js/zoom/zoom.js') %>
