@@ -26,10 +26,10 @@ rss:
 
 utterances:
   enable: true
-  repo: maodaisuki/blog
+  repo: maodaisuki/hexo-theme-maoblog
   issueTerm: pathname
   theme: github-light
-  cdn: https://maodaisuki.github.io/hexo-theme-maoblog/js/utterances-client.js
+  
 mathjax:
   enable: true
 
