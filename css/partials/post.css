@@ -155,3 +155,11 @@
   padding: 0 10px;
   margin-bottom: 16px;
 }
+.post-content .heimu {
+  background-color: var(--markdown-color);
+  transition: 0.2s;
+}
+.post-content .heimu:hover {
+  cursor: pointer;
+  background-color: transparent;
+}

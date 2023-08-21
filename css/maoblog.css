@@ -24,7 +24,7 @@ body {
   width: clamp(300px, 70%, 800px);
   margin: 15px auto;
   padding: 60px 0px 30px 0px;
-  min-height: 100%;
+  min-height: 100vh;
   border-radius: 6px;
   box-shadow: 0 0 10px 5px var(--shadow);
   display: flex;
@@ -86,6 +86,9 @@ ul {
 .nav li a:hover {
   opacity: 1;
   transition: opacity ease-in-out 0.5s;
+}
+.main-wrapper {
+  min-height: 80vh;
 }
 .arichive {
   display: flex;
