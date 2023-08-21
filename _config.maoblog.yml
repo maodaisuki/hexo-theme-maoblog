@@ -29,7 +29,7 @@ utterances:
   repo: maodaisuki/blog
   issueTerm: pathname
   theme: github-light
-  cdn: https://maodaisuki.github.io/hexo-theme-maoblog/js/utterances-client.js
+  
 mathjax:
   enable: true
 

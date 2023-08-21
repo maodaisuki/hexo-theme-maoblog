@@ -36,8 +36,7 @@ utterances:
     enable: true
     repo: [your repo]
     issueTerm: pathname
-    theme: github-light
-    cdn: [your utterences-client.js path] 
+    theme: github-light 
 ```
 
 You also can set the `utterances.enable: false` to turn off the comment. More info see [utterances](https://utteranc.es/).
