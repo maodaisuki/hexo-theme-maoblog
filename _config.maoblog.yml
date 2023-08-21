@@ -21,14 +21,6 @@ license:
 untitled:
   name: Untitled
 
-# stylesheets loaded in the <head>
-stylesheets:
-- /css/maoblog.css
-
-# scripts loaded in the end of the body
-scripts:
-- /js/maoblog.js
-
 rss:
   path: atom.xml
 
@@ -37,6 +29,10 @@ utterances:
   repo: maodaisuki/blog
   issueTerm: pathname
   theme: github-light
-
+  cdn: https://maodaisuki.github.io/hexo-theme-maoblog/js/utterances-client.js
 mathjax:
   enable: true
+
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: true
+  theme: default
