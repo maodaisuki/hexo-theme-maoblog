@@ -1,9 +1,9 @@
 <div class="header">
-    <a class="logo" href="<%- url_for() %>"><%= config.title %></a>
-    <ul class="nav">
-        <% for (name in theme.menu) { %>
-        <li><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
-        <% } %>
-        <!-- <li class="site-mode">light</i></li> -->
-    </ul>
+  <a class="logo" href="<%- url_for() %>"><%= config.title %></a>
+  <ul class="nav">
+    <% for (name in theme.menu) { %>
+    <li><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
+    <% } %>
+    <!-- <li class="site-mode">light</i></li> -->
+  </ul>
 </div>
