@@ -16,13 +16,29 @@
   </div>
 </main>
 <% if (theme.utterances && theme.utterances.enable && page.comments) { %>
-<script src="https://utteranc.es/client.js"
+<!-- <script src="https://utteranc.es/client.js"
   repo="<%= theme.utterances.repo %>"
   issue-term="<%= theme.utterances.issueTerm %>"
   theme="<%= theme.utterances.theme %>"
   crossorigin="anonymous"
   async>
+</script> -->
+<script src="https://giscus.app/client.js"
+        data-repo="maodaisuki/hexo-theme-maoblog"
+        data-repo-id="R_kgDOKICkkw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKICkk84CZEWg"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
 </script>
+<!-- 前往 https://giscus.app 获取配置代码 -->
 <% } %>
 <% if (theme.mermaid.enable) { %>
   <%- js('/js/mermaid.min.js') %>
