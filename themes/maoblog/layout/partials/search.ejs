@@ -1,0 +1,17 @@
+<div class="search-bar-container">  
+    <div class="search-bar">
+        <input id="search-input" value="" class="search-input" autofocus placeholder="Search something..." type="text" onblur="hideSearchBar()" oninput="exportSearchContent()">
+    </div>
+    <div class="search-output">
+        <ul class="search-output-list">
+            <!-- 结果列表 -->
+            <!-- <span style="padding-left: 3px; margin-left: 3px;">无记录</span> -->
+            <li class="Searching">
+                <div class="content">
+                    Searching...
+                </div>
+            </li>
+        </ul>
+        <span style="padding-left: 3px; margin-left: 3px; font-size: 13px;"><em>Powered by <span  onclick="goToLink(this)"><a href="./search.xml" class="search-xml li-link">search.xml</a></span></em></span>
+    </div>
+</div>

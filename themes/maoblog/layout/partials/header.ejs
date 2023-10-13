@@ -3,7 +3,7 @@
   <ul class="nav">
     <% for (name in theme.menu) { %>
       <% if(name === "Search") { %>
-        <li><a style="cursor: pointer;;" onclick="openSearchBar()"><%= name %></a></li>
+        <li><a style="cursor: pointer;" onclick="openSearchBar()"><%= name %></a></li>
       <% } else { %>
         <li><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
       <% }%>
@@ -11,3 +11,4 @@
     <!-- <li class="site-mode">light</i></li> -->
   </ul>
 </div>
+<%- partial('partials/search') %>
