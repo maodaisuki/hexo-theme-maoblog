@@ -1,17 +1,17 @@
 <div class="archive-list">
   <ul class="archive">
-      <% page.posts.each(function (post) { %>
-      <li>
-          <span class="archive-date"><%= date(post.date, "YYYY.MM.DD") %></span>
-          <div class="archive-main">
-                <% if (String(post.title) == "") { %>
-                    <a class="archive-title" href="<%- url_for(post.path) %>"><%= theme.untitled.name %><%= post.title %></a>
-                <% } else { %>
-                    <a class="archive-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
-                <% }%>
-              <!-- <a class="read-more" href="<%- url_for(post.path) %>"> ... </a> -->
-          </div>
-      </li>
-      <% }) %>
+    <% page.posts.each(function (post) { %>
+    <li>
+      <span class="archive-date"><%= date(post.date, "YYYY.MM.DD") %></span>
+      <div class="archive-main">
+        <% if (String(post.title) == "") { %>
+          <a class="archive-title" href="<%- url_for(post.path) %>"><%= theme.untitled.name %><%= post.title %></a>
+        <% } else { %>
+          <a class="archive-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+        <% }%>
+        <!-- <a class="read-more" href="<%- url_for(post.path) %>"> ... </a> -->
+      </div>
+    </li>
+    <% }) %>
   </ul>
 </div>

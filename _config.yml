@@ -13,6 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+# 为了使用本地搜索，这里最后请不要加入 /
 url: https://maodaisuki.github.io/hexo-theme-maoblog
 permalink: :year/:month/:title/
 # :year/:month/:day/

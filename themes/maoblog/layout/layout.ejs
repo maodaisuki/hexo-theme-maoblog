@@ -11,5 +11,9 @@
       </div>
     </div>
   </body>
-
+  <script type="text/javascript">
+    var searchXMLPath = "<%= config.url %>" + "/" + "<%= config.search.path %>"
+    console.log(searchXMLPath)
+  </script>
+  <%- js('/js/search/search.js') %>
 </html>

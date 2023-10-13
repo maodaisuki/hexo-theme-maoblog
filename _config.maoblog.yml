@@ -4,7 +4,9 @@ language: en
 # main menu navigation
 menu:
   Posts: /
-  Tags: /tags
+#  Tags: /tags
+  Search:
+# Search 注意和 header.ejs 中匹配
   About: /about
 #  Contact: /contact
 #  Archives: /archives
@@ -36,4 +38,8 @@ mathjax:
 mermaid: ## mermaid url https://github.com/knsv/mermaid
   enable: true
   theme: default
-  
+
+search:
+  path: search.xml
+  field: post
+  content: true
