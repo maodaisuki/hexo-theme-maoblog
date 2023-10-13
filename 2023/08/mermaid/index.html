@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
-    <link rel="alternate icon" type="image/png" href="/hexo-theme-maoblog/img/favicon.ico">
-    <title>
-        
-            mermaid test |
-         
-        Blog
-    </title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+  <link rel="alternate icon" type="image/png" href="/hexo-theme-maoblog/img/favicon.ico">
+  <title>
     
+      mermaid test |
+     
+    Blog
+  </title>
+  
 <link rel="stylesheet" href="/hexo-theme-maoblog/css/maoblog.css">
 
-    
+  
 <link rel="stylesheet" href="/hexo-theme-maoblog/css/partials/post.css">
 
-    
+  
 <link rel="stylesheet" href="/hexo-theme-maoblog/css/partials/comment.css">
 
-    
+  
+<link rel="stylesheet" href="/hexo-theme-maoblog/css/partials/search.css">
+
+  
 <link rel="stylesheet" href="/hexo-theme-maoblog/fontawesome/css/font-awesome.min.css">
 
-    
+  
 <link rel="stylesheet" href="/hexo-theme-maoblog/css/zoom.css">
 
-    
+  
 <link rel="stylesheet" href="/hexo-theme-maoblog/css/prism.css">
 
 <!-- hexo injector head_end start -->
@@ -39,17 +42,40 @@
     <div class="body-container">
       <div class="body-main">
         <div class="header-wrapper"><div class="header">
-    <a class="logo" href="/hexo-theme-maoblog/">Blog</a>
-    <ul class="nav">
-        
+  <a class="logo" href="/hexo-theme-maoblog/">Blog</a>
+  <ul class="nav">
+    
+      
         <li><a href="/hexo-theme-maoblog/">Posts</a></li>
-        
-        <li><a href="/hexo-theme-maoblog/tags">Tags</a></li>
-        
+      
+    
+      
+        <li><a style="cursor: pointer;" onclick="openSearchBar()">Search</a></li>
+      
+    
+      
         <li><a href="/hexo-theme-maoblog/about">About</a></li>
-        
-        <!-- <li class="site-mode">light</i></li> -->
-    </ul>
+      
+    
+    <!-- <li class="site-mode">light</i></li> -->
+  </ul>
+</div>
+<div class="search-bar-container">  
+    <div class="search-bar">
+        <input id="search-input" value="" class="search-input" autofocus placeholder="Search something..." type="text" onblur="hideSearchBar()" oninput="exportSearchContent()">
+    </div>
+    <div class="search-output">
+        <ul class="search-output-list">
+            <!-- 结果列表 -->
+            <!-- <span style="padding-left: 3px; margin-left: 3px;">无记录</span> -->
+            <li class="Searching">
+                <div class="content">
+                    Searching...
+                </div>
+            </li>
+        </ul>
+        <span style="padding-left: 3px; margin-left: 3px; font-size: 13px;"><em>Powered by <span  onclick="goToLink(this)"><a href="./search.xml" class="search-xml li-link">search.xml</a></span></em></span>
+    </div>
 </div></div>
         <div class="main-wrapper"><main>
   <div class="main-container">
@@ -72,13 +98,29 @@
   </div>
 </main>
 
-<script src="https://utteranc.es/client.js"
+<!-- <script src="https://utteranc.es/client.js"
   repo="maodaisuki/hexo-theme-maoblog"
   issue-term="pathname"
   theme="github-light"
   crossorigin="anonymous"
   async>
+</script> -->
+<script src="https://giscus.app/client.js"
+        data-repo="maodaisuki/hexo-theme-maoblog"
+        data-repo-id="R_kgDOKICkkw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKICkk84CZEWg"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
 </script>
+<!-- 前往 https://giscus.app 获取配置代码 -->
 
 
   
@@ -101,29 +143,35 @@
 <script src="/hexo-theme-maoblog/js/prism.js"></script>
 </div>
         <div class="footer-wrapper"><footer>
-    <div class="footer-container">
-        <div class="footer-meta">
-            
-                <div class="footer-meta-copyright">
-                    &copy; 2023 mao.
-                </div>
-            
-            
-                <div class="footer-meta-licenese">
-                    Licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>
-                </div>
-            
-            
-                <div class="footer-meta-rss">
-                    <a href="/hexo-theme-maoblog/atom.xml"><i class="fa fa-rss"></i></a>
-                </div>
-            
+  <div class="footer-container">
+    <div class="footer-meta">
+      
+        <div class="footer-meta-copyright">
+          &copy; 2023 mao.
         </div>
+      
+      
+        <div class="footer-meta-licenese">
+          Licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>
+        </div>
+      
+      
+        <div class="footer-meta-rss">
+          <a href="/hexo-theme-maoblog/atom.xml"><i class="fa fa-rss"></i></a>
+        </div>
+      
     </div>
+  </div>
 </footer>
 </div>
       </div>
     </div>
   </body>
+  <script type="text/javascript">
+    var searchXMLPath = "https://maodaisuki.github.io/hexo-theme-maoblog" + "/" + "search.xml"
+    console.log(searchXMLPath)
+  </script>
+  
+<script src="/hexo-theme-maoblog/js/search/search.js"></script>
 
 </html>

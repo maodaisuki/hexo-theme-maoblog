@@ -55,6 +55,9 @@
 .post-content p:not(:last-child) {
   margin: 0 0 20px;
 }
+.post-content ul {
+  list-style: inside;
+}
 .post-content img {
   max-width: 100%;
 }
@@ -75,10 +78,11 @@
   margin-inline: 0;
   padding: 3px 10px;
   background-color: var(--bg);
+  margin-bottom: 15px;
   border-left: 2px solid var(--markdown-color);
 }
 .post-content blockquote>p {
-  margin: 0;
+  margin: 5px;
 }
 .post-content table {
   width: 100%;
@@ -148,11 +152,11 @@
   padding: 0;
   margin-top: 16px;
   font-size: 1em;
-  font-style: italic;
   font-weight: 600;
 }
 .post-content dl dd {
-  padding: 0 10px;
+  font-style: italic;
+  padding: 0;
   margin-bottom: 16px;
 }
 .post-content .heimu {
