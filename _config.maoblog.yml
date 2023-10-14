@@ -49,6 +49,13 @@ tag_generator:
   # 0 设置为每页不限制数量
   order_by: -date
 
+# 控制文章信息
+meta_time:
+  enable: true
+
+meta_tags:
+  enable: true
+
 analytics:
   enable: true
   gtag: AW-11373423003
