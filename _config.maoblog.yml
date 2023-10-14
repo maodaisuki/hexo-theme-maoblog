@@ -4,7 +4,7 @@ language: en
 # main menu navigation
 menu:
   Posts: /
-#  Tags: /tags
+  Tags: /tags
   Search:
 # Search 注意和 header.ejs 中匹配
   About: /about
@@ -43,3 +43,12 @@ search:
   path: search.xml
   field: post
   content: true
+
+tag_generator:
+  per_page: 0
+  # 0 设置为每页不限制数量
+  order_by: -date
+
+analytics:
+  enable: true
+  gtag: AW-11373423003
