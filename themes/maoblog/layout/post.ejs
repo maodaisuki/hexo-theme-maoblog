@@ -3,28 +3,34 @@
       <div class="post-details">
           <% if (is_post()) { %>
             <div class="post-title">
-                <h1><%= page.title %></h1>
-            </div>
-            <div class="post-meta">
-              <% if(theme.meta_time.enable) {%>
-                <div class="post-date">
-                  <i class="fa fa-calendar"></i>&nbsp;&nbsp;<span class="post-date"><%= date(page.date, 'YYYY/MM/DD') %></span>
-                </div>
-              <% } %>
-              <% if(theme.meta_tags.enable) { %>
-                <div class="post-tags">
-                  <% page.tags.each(function(tag) { %>
-                    <div class="tag-item">
-                      <a href="<%- url_for(tag.path) %>"><i class="fa fa-tag"></i> <%= tag.name %></a>
-                    </div>
-                  <%})%>
-                </div>
-              <% } %>
+              <h1><%= page.title %></h1>
             </div>
           <% } %>
           <div class="post-content">
-              <%- page.content %>
+            <%- page.content %>
           </div>
+          <% if(theme.meta.enable) {%>
+            <div class="dot-line"></div>
+            <div class="post-meta">
+              <div class="post-date">
+                <i class="fa fa-calendar"></i>&nbsp;&nbsp;<span class="post-date"><%= date(page.date, 'YYYY/MM/DD') %></span>
+              </div>
+              <div class="post-tags">
+                <% if(page.tags) { %>
+                  <div class="tag-item">
+                    <a href="#"><i class="fa fa-tag"></i>&nbsp;&nbsp;Untagged</a>
+                  </div>
+                <% }
+                else { %> 
+                  <% page.tags.each(function(tag) { %>
+                    <div class="tag-item">
+                      <a href="<%- url_for(tag.path) %>"><i class="fa fa-tag"></i>&nbsp;&nbsp;<%= tag.name %></a>
+                    </div>
+                  <%})%>
+                <% } %>
+              </div>
+            </div>
+          <%} %>
       </div>
   </div>
 </main>
