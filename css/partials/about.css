@@ -1,0 +1,150 @@
+.about-info {
+  margin-top: 20px;
+}
+.about-info h1,
+.about-info h2,
+.about-info h3,
+.about-info h4,
+.about-info h5,
+.about-info h6 {
+  margin-block: 0;
+  margin-inline: 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  line-height: 1.2em;
+}
+.about-info h1 {
+  font-size: 1.4em;
+}
+.about-info h2 {
+  font-size: 1.3em;
+}
+.about-info h3 {
+  font-size: 1.2em;
+}
+.about-info h4 {
+  font-size: 1.1em;
+}
+.about-info h5 {
+  font-size: 1em;
+}
+.about-info h6 {
+  font-size: 0.9em;
+}
+.about-info p {
+  margin-block: 0;
+  font-weight: lighter;
+  line-height: 1.6em;
+}
+.about-info p:not(:last-child) {
+  margin: 0 0 20px;
+}
+.about-info img {
+  max-width: 100%;
+}
+.about-info .video-container {
+  background: #000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.about-info iframe,
+.about-info .video-container iframe {
+  width: 100%;
+  height: 100vh;
+  max-height: 360px;
+  margin: 12px 0;
+}
+.about-info blockquote {
+  margin-block: 0;
+  margin-inline: 0;
+  padding: 3px 10px;
+  margin-bottom: 15px;
+  background-color: var(--bg);
+  border-left: 2px solid var(--markdown-color);
+}
+.about-info blockquote>p {
+  margin: 0;
+}
+.about-info table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+}
+.about-info table th {
+  padding: 5px 0;
+  border-bottom: 2px solid var(--line);
+}
+.about-info table tr:nth-child(odd) td {
+  padding: 5px 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--oddbg);
+}
+.about-info table tr:nth-child(even) td {
+  padding: 5px 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--evenbg);
+}
+.about-info code,
+.about-info kbd,
+.about-info pre,
+.about-info samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+.about-info .mermaid {
+  text-align: center;
+}
+.about-info kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 14px ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  line-height: 1.2em;
+  color: #24292f;
+  vertical-align: middle;
+  background-color: #f6f8fa;
+  border: solid 1px rgba(175,184,193,0.2);
+  border-bottom-color: rgba(175,184,193,0.2);
+  border-radius: 6px;
+  box-shadow: inset 0 -1px 0 rgba(175,184,193,0.2);
+}
+.about-info acronym {
+  text-decoration: underline;
+}
+.about-info sub {
+  bottom: -0.25em;
+}
+.about-info sup {
+  top: -0.5em;
+}
+.about-info mark {
+  background: #f8ff9a;
+}
+.about-info a {
+  color: #0084ff;
+  text-decoration: underline;
+}
+.about-info a:hover {
+  text-decoration: none;
+}
+.about-info dl {
+  padding: 0;
+}
+.about-info dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+.about-info dl dd {
+  padding: 0 10px;
+  margin-bottom: 16px;
+}
+.about-info .heimu {
+  background-color: var(--markdown-color);
+  transition: 0.2s;
+}
+.about-info .heimu:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
