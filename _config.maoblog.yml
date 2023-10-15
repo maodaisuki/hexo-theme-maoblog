@@ -25,12 +25,6 @@ untitled:
 
 rss:
   path: atom.xml
-
-utterances:
-  enable: true
-  repo: maodaisuki/hexo-theme-maoblog
-  issueTerm: pathname
-  theme: github-light
   
 mathjax:
   enable: true
@@ -38,6 +32,9 @@ mathjax:
 mermaid: ## mermaid url https://github.com/knsv/mermaid
   enable: true
   theme: default
+
+giscus:
+  enable: true
 
 search:
   path: search.xml
