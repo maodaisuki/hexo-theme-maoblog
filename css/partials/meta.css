@@ -11,7 +11,12 @@
   margin-bottom: 3px;
 }
 .tag-item {
-  display: inline;
+  display: inline-block;
   margin-right: 2px;
   margin-bottom: 2px;
+}
+.dot-line {
+  margin-top: 30px;
+  border-bottom: 1px #535353 dashed;
+  width: 25%;
 }
