@@ -50,10 +50,7 @@ tag_generator:
   order_by: -date
 
 # 控制文章信息
-meta_time:
-  enable: true
-
-meta_tags:
+meta:
   enable: true
 
 analytics:
