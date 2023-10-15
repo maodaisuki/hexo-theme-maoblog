@@ -16,7 +16,7 @@
                 <i class="fa fa-calendar"></i>&nbsp;&nbsp;<span class="post-date"><%= date(page.date, 'YYYY/MM/DD') %></span>
               </div>
               <div class="post-tags">
-                <% if(page.tags) { %>
+                <% if(!page.tags) { %>
                   <div class="tag-item">
                     <a href="#"><i class="fa fa-tag"></i>&nbsp;&nbsp;Untagged</a>
                   </div>
