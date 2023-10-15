@@ -34,14 +34,7 @@
       </div>
   </div>
 </main>
-<% if (theme.utterances && theme.utterances.enable && page.comments) { %>
-<!-- <script src="https://utteranc.es/client.js"
-  repo="<%= theme.utterances.repo %>"
-  issue-term="<%= theme.utterances.issueTerm %>"
-  theme="<%= theme.utterances.theme %>"
-  crossorigin="anonymous"
-  async>
-</script> -->
+<% if (theme.giscus.enable) { %>
 <script src="https://giscus.app/client.js"
         data-repo="maodaisuki/hexo-theme-maoblog"
         data-repo-id="R_kgDOKICkkw"
