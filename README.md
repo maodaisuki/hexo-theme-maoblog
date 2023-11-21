@@ -16,11 +16,11 @@
 
 下载主分支（main）。
 
-![image-20231121212622056](C:\Users\Shincyan\AppData\Roaming\Typora\typora-user-images\image-20231121212622056.png)
+![Uploading image-20231121212622056.png…]()
 
 压缩包解压到任意空目录，这里使用 blog 目录，并且使用了 vscode 作为编辑器。
 
-![image-20231121213007859](C:\Users\Shincyan\AppData\Roaming\Typora\typora-user-images\image-20231121213007859.png)
+![image-20231121213007859](https://github.com/maodaisuki/hexo-theme-maoblog/assets/133942310/c6b897f8-cddd-437a-aeeb-6a2ae3c729cd)
 
 安装 nodejs。在 blog 目录使用 cmd 运行下列命令（由于未配置的 powershell 对于部分命令会提示 `无法加载文件 xxx, 因为在此系统上禁止运行脚本`，为了避免不必要的麻烦使用 cmd（终端)）。
 
@@ -32,7 +32,7 @@ npm install
 
 效果如下图。
 
-![image-20231121214242347](C:\Users\Shincyan\AppData\Roaming\Typora\typora-user-images\image-20231121214242347.png)
+![Uploading image-20231121214242347.png…]()
 
 然后运行命令启动本地服务器。
 
@@ -43,7 +43,7 @@ hexo s
 
 效果如下图，复制提示的链接本地预览。
 
-![image-20231121214320351](C:\Users\Shincyan\AppData\Roaming\Typora\typora-user-images\image-20231121214320351.png)
+![image-20231121214320351](https://github.com/maodaisuki/hexo-theme-maoblog/assets/133942310/6c4f97d9-d020-4b73-a898-3322625c1f92)
 
 #### Step 2 自定义配置
 
